@@ -20,6 +20,17 @@ input {
     background: url("img/chopping-veg.jpg") center center no-repeat;
     background-size: cover;
   }
+
+  .login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    background: url("img/main.jpg") center center no-repeat;
+    background-size: cover;
+  }
+
+
   button {
     padding: 10px 20px;
     width: 120px;
@@ -45,3 +56,15 @@ input {
       font-size: 30pt;
       color: red;
   }
+
+  .login-form {
+    background: #ffffff;
+    width: 500px;
+    padding: 50px;
+  }
+
+
+  .login-header {
+    font-size: 30pt;
+    color: red;
+}
