@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyA0_E2a_b2r4d8LcIuKM9S3B6rPmnhbHTw",
+            authDomain: "an-gi-2de06.firebaseapp.com",
+            databaseURL: "https://an-gi-2de06.firebaseio.com",
+            projectId: "an-gi-2de06",
+            storageBucket: "an-gi-2de06.appspot.com",
+            messagingSenderId: "1035050822731",
+            appId: "1:1035050822731:web:616b3ff5447fe07b92f1ce"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="component.js"></script>
+    <script src="controller.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+    <script src="main.js"></script>
 </head>
+
 <body>
-<script src="component.js"></script>
-<script src="controller.js"></script>
-<script src="model.js"></script>
-<script src="view.js"></script>
+    <div id="app">
+abc
+    </div>
 </body>
+
 </html>
