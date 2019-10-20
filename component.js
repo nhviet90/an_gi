@@ -48,16 +48,6 @@ component.login = `
     <h3 class="register-header">Đăng nhập :</h3>
   </div>
   <div class="form-content">
-    <div class="name-wrapper">
-      <div class="input-wrapper">
-        <input id="input-firstname" type="text" name="firstname" placeholder="Firstname">
-        <div id="firstname-error" class="message-error"></div>
-      </div>
-      <div class="input-wrapper">
-        <input type="text" name="lastname" placeholder="Lastname">
-        <div id="lastname-error" class="message-error"></div>
-      </div>
-    </div>
     <div class="input-wrapper">
       <input type="email" name="email" placeholder="Email">
       <div id="email-error" class="message-error"></div>

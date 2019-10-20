@@ -11,6 +11,7 @@ input {
     border: 1px solid #ecebec;
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 10px;
   }
   .register-container {
     width: 100vw;
@@ -67,4 +68,18 @@ input {
   .login-header {
     font-size: 30pt;
     color: red;
+}
+
+.message-error {
+  line-height: 25px;
+  color: red;
+}
+
+.message-success {
+  line-height: 25px;
+  color:#00ff00;
+}
+
+button :disabled{
+  background: #ffffff;
 }
