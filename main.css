@@ -11,6 +11,7 @@ input {
     border: 1px solid #ecebec;
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 10px;
   }
   .register-container {
     width: 100vw;
@@ -35,7 +36,7 @@ input {
     padding: 10px 20px;
     width: 120px;
     height: 38px;
-    background: #4482ff;
+    background: #5cb85c;
     color: #ffffff;
     border-radius: 5px;
   }
@@ -67,4 +68,115 @@ input {
   .login-header {
     font-size: 30pt;
     color: red;
+}
+
+.message-error {
+  line-height: 25px;
+  color: red;
+}
+
+.message-success {
+  line-height: 25px;
+  color:#00ff00;
+}
+
+button :disabled{
+  background: #ffffff;
+}
+.nav-admin {
+  height: 38px;
+}
+.btn-icon {
+  height: 20px;
+  width: 20px;
+  padding: 0px;
+  background: none;
+  border: none;
+}
+#btn-sign-out:hover {
+  background: red;
+}
+.add-btn:hover {
+  background: orange;
+  border-bottom: none;
+}
+.nav-admin {
+  height: 38px;
+  display: flex;
+  justify-content: flex-end;
+  background: #A9A9A9;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.add_food_form {
+  display: none;
+}
+.add_food_form {
+  width: 50vw;
+  background:#ffffff;
+  position: fixed;
+  top: 38px;
+  right:0px;
+} 
+#food_type {
+  width: 50vw;
+}
+.food-materia {
+  width: 50vw;
+  height: 15vh;
+}
+.food-recipe {
+  width: 50vw;
+  height: 30vh;
+}
+.close-add-food-form{
+  background: #FF3131;
+}
+.food-menu {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #5cb85c;
+}
+.food-menu b {
+  color: red;
+}
+.food-menu img {
+  width: 120px;
+  height: 120px;
+}
+.food-menu div:hover b {
+  color: #ffffff;  
+  background: #5cb85c;
+  }
+.food-detail {
+  display: flex;
+}
+.food-detail .b {
+  margin-top: 50px
+}
+.food-admin-menu {
+  width: 33vw;
+  text-align: center;
+}
+
+#food-list {
+  width: 20vw;
+  height: calc(100vh - 181px);
+  border:2px solid #5cb85c;
+  text-align: center;
+  color: #FF3131;
+}
+#food-material {
+  width: 30vw;
+  height: calc(100vh - 181px);
+  border:2px solid #5cb85c;
+  text-align: center;
+  color: #FF3131;
+}
+#food-recipe {
+  width: 50vw;
+  height: calc(100vh - 181px);
+  border:2px solid #5cb85c;
+  text-align: center;
+  color: #FF3131;
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="admin.js"></script>
+</head>
+
+<body>
+    <nav class="nav-admin">
+        <div>
+            <button class="add-btn" id="add-btn">THÊM MÓN</button>
+        </div>
+    </nav>
+    <form action="">
+        <div class="add_food_form" id="add_food_form">
+            <h1>Thêm món</h1>
+            <label><b>Loại món ăn</b></label>
+            <br>
+            <select name="food_type" id="food_type">
+                <option value="mon_chinh">Món chính</option>
+                <option value="mon_canh">Món canh</option>
+                <option value="mon_rau">Món rau</option>
+            </select>
+            <br>
+            <label><b>Tên món ăn</b></label>
+            <br>
+            <input name="foodName" type="text" required placeholder="Nhập tên món ăn">
+            <div class="food-name-error" id="food-name-error"></div>
+            <label><b>Nguyên liệu</b></label>
+            <br>
+            <textarea name="foodMateria" class="food-materia" type="text" required
+                placeholder="Nhập nguyên liệu"></textarea>
+            <div class="food-material-error" id="food-material-error"></div>
+            <label><b>Công thức nấu</b></label>
+            <br>
+            <textarea name="foodRecipe" class="food-recipe" type="text" required placeholder="Công thức nấu"></textarea>
+            <div class="food-recipe-error" id="food-recipe-error"></div>
+            <button type="submit" class="add_btn_done">Hoàn thành</button>
+            <button class="close-add-food-form" id="close-add-food-form">Thoát</button>
+        </div>
+    </form>
+    <section class="food-menu">
+        <div class="mon-chin-menu">
+            <img src="img/mon-chinh.png" alt="mon-chinh">
+            <br>
+            <b>MÓN CHÍNH</b>
+            </div>
+        <div class="mon-canh-menu">
+            <img src="img/mon-canh.png" alt="mon-canh">
+            <br>
+            <b>MÓN CANH</b>
+        </div>
+        <div class="mon-rau-menu">
+            <img src="img/mon-rau.png" alt="mon-rau">
+            <br>
+            <b>MÓN RAU</b>
+            </div>
+    </section>
+    <section class="food-detail">
+        <div id="food-material"><b>NGUYÊN LIỆU</b></div>
+        <div id="food-recipe"><b>CÔNG THỨC</b></div>
+    </section>
+
+</body>
+
+</html>
