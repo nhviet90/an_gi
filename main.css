@@ -82,6 +82,7 @@ input {
 
 button :disabled{
   background: #ffffff;
+<<<<<<< HEAD
 }
 .nav-admin {
   height: 38px;
@@ -179,4 +180,6 @@ button :disabled{
   border:2px solid #5cb85c;
   text-align: center;
   color: #FF3131;
+=======
+>>>>>>> 1d58878ed1cb4d2bf797ef837251849fb8cb06f8
 }

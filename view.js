@@ -12,12 +12,17 @@ const validators = {
     }
 }
 
+<<<<<<< HEAD
 view.showComponent = function (name) {
+=======
+view.showComponent = function(name) {
+>>>>>>> 1d58878ed1cb4d2bf797ef837251849fb8cb06f8
     let app = document.getElementById('app');
     switch (name) {
         case 'food':
             app.innerHTML = component.food;
             break;
+<<<<<<< HEAD
         case 'register': {
             app.innerHTML = component.register;
             let link = document.getElementById('login-link')
@@ -27,6 +32,17 @@ view.showComponent = function (name) {
             form.onsubmit = formSubmitHandler
 
             function linkClickHandler() {
+=======
+        case 'register':{
+            app.innerHTML = component.register;
+            let link = document.getElementById('login-link')
+            link.onclick = linkClickHandler
+            
+            let form = document.getElementById('register-form')
+            form.onsubmit = formSubmitHandler
+
+            function linkClickHandler(){
+>>>>>>> 1d58878ed1cb4d2bf797ef837251849fb8cb06f8
                 view.showComponent('login')
             }
 
@@ -50,21 +66,39 @@ view.showComponent = function (name) {
                     view.validate(registerInfo.password, validators.password, 'password-error', 'Invalid password!'),
                     view.validate(registerInfo.confirmPassword, function (str) {
                         return str === registerInfo.password
+<<<<<<< HEAD
                     }, 'confirm-password-error', 'Invalid confirm password')
                 ]
                 if (allPassed(validateResult)) {
                     controller.register(registerInfo)
                 }
 
+=======
+                    }, 'repassword-error', 'Invalid confirm password')
+                ]
+                if (allPassed(validateResult)) {
+                    controller.register(registerInfo)
+                    
+                }
+                
+>>>>>>> 1d58878ed1cb4d2bf797ef837251849fb8cb06f8
 
             }
             break;
         }
+<<<<<<< HEAD
         case 'login': {
             app.innerHTML = component.login;
             let link = document.getElementById('register-link');
             link.onclick = linkClickHandler;
 
+=======
+        case 'login':{
+            app.innerHTML = component.login;
+            let link = document.getElementById('register-link');
+            link.onclick = linkClickHandler;
+            
+>>>>>>> 1d58878ed1cb4d2bf797ef837251849fb8cb06f8
             let form = document.getElementById('login-form')
             form.onsubmit = formSubmitHandler
 
@@ -75,7 +109,11 @@ view.showComponent = function (name) {
 
             function formSubmitHandler(event) {
                 event.preventDefault();
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> 1d58878ed1cb4d2bf797ef837251849fb8cb06f8
                 let loginInfo = {
                     email: form.email.value,
                     password: form.password.value
@@ -88,6 +126,7 @@ view.showComponent = function (name) {
                     controller.login(loginInfo)
                 }
             }
+<<<<<<< HEAD
             break;
         }
         case 'admin': {
@@ -157,11 +196,33 @@ view.showComponent = function (name) {
                 return true
             }
 
+=======
+            
+            
+            
+
+            break;
+        }
+        function allPassed(validateResult) {
+            for (let result of validateResult) {
+                if (!result) {
+                    return false
+                }
+
+            }
+            return true
+        }
+        
+>>>>>>> 1d58878ed1cb4d2bf797ef837251849fb8cb06f8
     }
 }
 
 view.setText = function (id, text) {
     document.getElementById(id).innerHTML = text
+<<<<<<< HEAD
+=======
+        
+>>>>>>> 1d58878ed1cb4d2bf797ef837251849fb8cb06f8
 }
 
 
@@ -172,6 +233,7 @@ view.validate = function (value, validators, idErrorMessage, errorMessage) {
     } else {
         view.setText(idErrorMessage, errorMessage)
         return false
+<<<<<<< HEAD
     }
 }
 view.showListFood = function (name) {
@@ -182,5 +244,7 @@ view.showListFood = function (name) {
             <div>${food.foodName}</div>
             `
         }
+=======
+>>>>>>> 1d58878ed1cb4d2bf797ef837251849fb8cb06f8
     }
 }
